@@ -8,7 +8,7 @@ public class HW1 {
 
     public static void checkMonth() {
         //Дано число месяца (тип int). Необходимо определить время года (зима, весна, лето, осень) и вывести на консоль.
-        int month = 3;
+        int month = 13;
         String season;
         if(month == 1 || month == 2 || month == 12)
             season = "Зима";
@@ -19,7 +19,7 @@ public class HW1 {
         else if (month == 9 || month == 10 || month == 11)
             season = "Осень";
         else
-            season = "Введите валидное число от 1-го до 12 ?";
+            season = "Пожалуйста введите валидное число от 1-го до 12";
         System.out.println(season);
     }
 

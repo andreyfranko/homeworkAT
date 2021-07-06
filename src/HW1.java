@@ -1,7 +1,9 @@
 public class HW1 {
     public static void main(String[] args) {
-
         checkMonth();
+        checkName();
+        checkNumberMax();
+        checkNumberMin();
     }
 
     public static void checkMonth() {
@@ -61,4 +63,3 @@ public class HW1 {
         System.out.println(max);
     }
 }
-

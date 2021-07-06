@@ -3,7 +3,7 @@ public class HW1 {
         checkMonth();
         checkName();
         checkNumberMax();
-        checkNumberMin();
+        maxValue();
     }
 
     public static void checkMonth() {
@@ -48,18 +48,53 @@ public class HW1 {
         System.out.println("Largest number " + bigNumber);
     }
 
-    public static void checkNumberMin() {
-        //Даны 5 чисел (тип int). Вывести вначале наименьшее, а затем наибольшее из данных чисел.
-        int e = 100;
-        int f = 90;
-        int g = 80;
-        int h = 70;
-        int i = 60;
-        int min;
-        int max;
-        min = Math.min(e, Math.min(Math.min(f, g), Math.min(h, i)));
-        max = Math.max(e, Math.max(Math.max(f, g), Math.max(h, i)));
-        System.out.println(min);
-        System.out.println(max);
+//    public static void checkNumberMin() {
+//        //Даны 5 чисел (тип int). Вывести вначале наименьшее, а затем наибольшее из данных чисел.
+//        int e = 100;
+//        int f = 90;
+//        int g = 80;
+//        int h = 70;
+//        int i = 60;
+//        int min;
+//        int max;
+//        min = Math.min(e, Math.min(Math.min(f, g), Math.min(h, i)));
+//        max = Math.max(e, Math.max(Math.max(f, g), Math.max(h, i)));
+//        System.out.println(min);
+//        System.out.println(max);
+//    }
+
+    public static void maxValue(){
+
+        int array[] = new int[]{10, 88, 2, 120};
+
+        // Вызов метода getMax () для получения максимального значения
+        int max = getMax(array);
+        System.out.println("Maximum Value is: "+max);
+
+        // Вызов метода getMin () для получения минимального значения
+        int min = getMin(array);
+        System.out.println("Minimum Value is: "+min);
+
+    }
+
+    //здесь находим максимум
+    public static int getMax(int[] inputArray){
+        int maxValue = inputArray[0];
+        for(int i=1;i < inputArray.length;i++){ if(inputArray[i] > maxValue){
+            maxValue = inputArray[i];
+        }
+        }
+        return maxValue;
+    }
+
+    // здесь находим минимум
+    public static int getMin(int[] inputArray){
+        int minValue = inputArray[0];
+        for(int i=1;i<inputArray.length;i++){
+            if(inputArray[i] < minValue){
+                minValue = inputArray[i];
+            }
+        }
+        return minValue;
     }
 }

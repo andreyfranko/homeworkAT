@@ -4,15 +4,15 @@ public class HW2 {
     private static String answer;
 
     public static void main(String[] args) {
-//        starsVariant1(10);
-//        starsVariant2();
-//        starsVariant11();
-//        starsVariant4();
-//        starsVariant5();
-//        starsVariant6();
-//        starsVariant7();
-//        starsVariant8();
-//        starsVariant10();
+        starsVariant1(10);
+        starsVariant2();
+        starsVariant11();
+        starsVariant4();
+        starsVariant5();
+        starsVariant6();
+        starsVariant7();
+        starsVariant8();
+        starsVariant10();
         puzzle();
     }
 
@@ -169,7 +169,7 @@ public class HW2 {
         for (i = 0; i < 10; i++) {
             for (int j = 0; j < 10; j++) {
                 if (j <= i) {
-                    System.out.print("8");
+                    System.out.print("*");
                 }
             }
             System.out.println();
@@ -191,8 +191,6 @@ public class HW2 {
             }
             System.out.println("");
         }
-
-
     }
 
     public static void puzzle() {
@@ -211,8 +209,8 @@ public class HW2 {
                     System.out.println("Правильно!");
                     exit = true;
                     break;
-                case ("Пробуй еще"):
-                    System.out.println("Правильный ответ: 42 годика");
+                case (""):
+                    System.out.println("Правильный ответ: 42 года");
                     exit = true;
                     break;
                 default:
@@ -221,6 +219,3 @@ public class HW2 {
         }
     }
 }
-
-
-
